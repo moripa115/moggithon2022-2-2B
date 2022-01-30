@@ -5,8 +5,58 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Moggithon</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    
+<body class="main_container">
+
+    <!--＝＝＝＝＝＝＝＝＝＝＝画面全体 ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝ー-->
+    <div>
+        <!-- これは多分背景のビデオだと思う！ -->
+        <video>
+            <source>
+        </video>
+    </div>
+
+    <!-- ＝＝＝＝＝＝＝＝＝＝時間選択ボタン＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝ -->
+    <div class="time_select_container">
+        <button>2 Minutes</button>
+        <button>5 Minutes</button>
+        <button>10<br>Minutes</button>
+    </div>
+
+    <!--＝＝＝＝＝＝＝＝＝＝ 残り時間表示＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝ -->
+    <div>
+        <audio>
+            <!-- 多分音 -->
+            <source>
+        </audio>
+        <!-- 再生・停止ボタン -->
+        <img src="" alt="">
+        <svg>
+            <!--残り時間出るマル -->
+            </circle>
+        </svg>
+        <svg>
+            <!-- なんで同じの2個なのかわからない -->
+            </circle>
+        </svg>
+        <!-- リプレイボタン -->
+        <img src="" alt="">
+        <!-- 残り時間表示 -->
+        <h3></h3>
+    </div>
+
+    <!-- ＝＝＝＝＝＝＝＝＝＝天気選択 ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝-->
+    <div class="weather_select_container">
+        <!-- 曇り選択ボタン -->
+        <button id="weather_select_btn_cloud" class="weather_select_btn">
+            <img class="weather_select_btn_img" src="img/cloud.svg" alt="">
+        </button>
+        <!-- 晴れ選択ボタン -->
+        <button id="weather_select_btn_sun" class="weather_select_btn">
+            <img class="weather_select_btn_img" src="img/sun.svg" alt="">
+        </button>
+    </div>
+    <script src="index.js"></script>
 </body>
 </html>

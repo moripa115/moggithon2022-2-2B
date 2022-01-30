@@ -1,0 +1,48 @@
+/* 画面全体・共通内容 */
+
+.main_container {
+  display: flex;
+}
+
+
+
+
+/* 時間選択ボタン*/
+.time_select_container {
+  display: flex;
+  flex-flow: column;
+  justify-content:space-between;
+}
+
+.time_select_container button {
+  
+}
+
+/* 残り時間表示 */
+
+
+
+
+/* 天気選択ボタン */
+.weather_select_container {
+  display: flex;
+  flex-direction: column;
+  justify-content:space-between;
+}
+
+.weather_select_btn {
+  border-radius: 50%;
+  border: none;
+  width: 120px;
+  height: 120px;
+}
+#weather_select_btn_cloud {
+  background-color: royalblue;
+}
+#weather_select_btn_sun {
+  background-color: maroon;
+}
+.weather_select_btn_img {
+  width: 80%;
+  height: 80%;
+}
