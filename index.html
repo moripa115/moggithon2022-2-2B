@@ -10,10 +10,11 @@
 <body class="main_container">
 
     <!--＝＝＝＝＝＝＝＝＝＝＝画面全体 ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝ー-->
-    <div>
+    <div class="video_container">
         <!-- これは多分背景のビデオだと思う！ -->
-        <video>
-            <source>
+        <video loop>
+            <source src="./video/rain.mp4"  type="video/mp4">
+            I'm sorry; your browser doesn't support HTML5 video.
         </video>
     </div>
 
@@ -26,12 +27,12 @@
 
     <!--＝＝＝＝＝＝＝＝＝＝ 残り時間表示＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝ -->
     <div>
-        <audio>
+        <audio class="song">
             <!-- 多分音 -->
-            <source>
+            <source src="./sounds/rain.mp3">
         </audio>
         <!-- 再生・停止ボタン -->
-        <img src="" alt="">
+        <img src="./img/play.svg" alt="再生ボタン" class="play">
         <svg>
             <!--残り時間出るマル -->
             </circle>
@@ -49,11 +50,11 @@
     <!-- ＝＝＝＝＝＝＝＝＝＝天気選択 ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝-->
     <div class="weather_select_container">
         <!-- 曇り選択ボタン -->
-        <button id="weather_select_btn_cloud" class="weather_select_btn">
+        <button data-sound="./sounds/rain.mp3" data-video="./video/rain.mp4" id="weather_select_btn_cloud" class="weather_select_btn">
             <img class="weather_select_btn_img" src="img/cloud.svg" alt="">
         </button>
         <!-- 晴れ選択ボタン -->
-        <button id="weather_select_btn_sun" class="weather_select_btn">
+        <button data-sound="./sounds/beach.mp3" data-video="./video/beach.mp4" id="weather_select_btn_sun" class="weather_select_btn">
             <img class="weather_select_btn_img" src="img/sun.svg" alt="">
         </button>
     </div>
