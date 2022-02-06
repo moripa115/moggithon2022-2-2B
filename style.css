@@ -2,6 +2,9 @@
 
 .main_container {
   display: flex;
+  height: 100vh;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 .video_container {
@@ -25,11 +28,35 @@
 }
 
 
-
 /* 残り時間表示 */
+.player-container {
+  position: relative;
+  height: 80%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  flex: 1;
+}
 
+.player-container svg{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-90deg);
+  pointer-events: none;
+}
 
+.player-container svg circle {
+  transition: all 0.2s ease-in-out;
+}
 
+.time-display {
+  color: white;
+  position: absolute;
+  font-size: 50px;
+  bottom: 10%;
+}
 
 /* 天気選択ボタン */
 .weather_select_container {

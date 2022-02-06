@@ -26,36 +26,37 @@
     </div>
 
     <!--＝＝＝＝＝＝＝＝＝＝ 残り時間表示＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝ -->
-    <div>
+    <div class="player-container">
         <audio class="song">
             <!-- 多分音 -->
             <source src="./sounds/rain.mp3">
         </audio>
         <!-- 再生・停止ボタン -->
-        <img src="./img/play.svg" alt="再生ボタン" class="play">
-        <svg>
-            <!--残り時間出るマル -->
-            </circle>
+        <img src="./svg/play.svg" alt="再生ボタン" class="play">
+        <!--残り時間出るマル -->
+        <svg class="track-circle" width="450" height="450" viewBox="0 0 450 450">
+            <circle cx="200" cy="200" r="200"  fill="none" stroke="white" stroke-width="20"/>
         </svg>
         <svg>
-            <!-- なんで同じの2個なのかわからない -->
-            </circle>
+            
         </svg>
         <!-- リプレイボタン -->
-        <img src="./img/replay.svg" alt="replay" class="replay">
+
+        <img src="./svg/replay.svg" class="replay">
+
         <!-- 残り時間表示 -->
-        <h3></h3>
+        <h3 class="time-display">0:00</h3>
     </div>
 
     <!-- ＝＝＝＝＝＝＝＝＝＝天気選択 ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝-->
     <div class="weather_select_container">
         <!-- 曇り選択ボタン -->
         <button data-sound="./sounds/rain.mp3" data-video="./video/rain.mp4" id="weather_select_btn_cloud" class="weather_select_btn">
-            <img class="weather_select_btn_img" src="img/cloud.svg" alt="">
+            <img class="weather_select_btn_img" src="svg/cloud.svg" alt="">
         </button>
         <!-- 晴れ選択ボタン -->
         <button data-sound="./sounds/beach.mp3" data-video="./video/beach.mp4" id="weather_select_btn_sun" class="weather_select_btn">
-            <img class="weather_select_btn_img" src="img/sun.svg" alt="">
+            <img class="weather_select_btn_img" src="svg/sun.svg" alt="">
         </button>
     </div>
     <script src="index.js"></script>
