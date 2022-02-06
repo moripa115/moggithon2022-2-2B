@@ -1,3 +1,4 @@
+
 'use strict';
 
 const sounds = document.querySelectorAll(".weather_select_container button");
@@ -30,5 +31,4 @@ const checkPlaying = song => {
     play.src = "./img/play.svg";
   }
 };
-
 
