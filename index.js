@@ -9,9 +9,10 @@ const play = document.querySelector(".play");
 const replay = document.querySelector(".replay");
 
 
-const outline = document.querySelector(".track-circle");
+const outline = document.querySelector(".track-circle circle");
+const outlineLength = outline.getTotalLength();
 
-const timeDisplay = document.querySelectorAll(".time-display");
+const timeDisplay = document.querySelector(".time-display");
 
 
 const timeSelect = document.querySelectorAll(".time_select_container button");
@@ -19,11 +20,11 @@ let leftDuration = 600;
 
 timeDisplay.textContent = `${Math.floor(leftDuration / 60)}:${Math.floor(leftDuration % 60)}`;
 
-// outline.style.strokeDashoffset = outlineLength;
-// outline.style.strokeDasharray = outlineLength;
-// timeDisplay.textContent = `${Math.floor(fakeDuration / 60)}:${Math.floor(
-//   fakeDuration % 60
-// )}`;
+outline.style.strokeDashoffset = outlineLength;
+outline.style.strokeDasharray = outlineLength;
+timeDisplay.textContent = `${Math.floor(leftDuration / 60)}:${Math.floor(
+  leftDuration % 60
+)}`;
 
 timeSelect.forEach(option => {
   option.addEventListener("click", function() { 
