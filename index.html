@@ -7,16 +7,18 @@
     <title>Moggithon</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body class="main_container">
+<body>
+    <main class="main_container">
 
-    <!--＝＝＝＝＝＝＝＝＝＝＝画面全体 ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝ー-->
-    <div class="video_container">
-        <!-- これは多分背景のビデオだと思う！ -->
-        <video loop>
-            <source src="./video/rain.mp4"  type="video/mp4">
-            I'm sorry; your browser doesn't support HTML5 video.
-        </video>
-    </div>
+        <!--＝＝＝＝＝＝＝＝＝＝＝画面全体 ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝ー-->
+        <div class="video_container">
+            <!-- これは多分背景のビデオだと思う！-->
+            <video loop>
+                <source src="./video/rain.mp4"  type="video/mp4">
+                I'm sorry; your browser doesn't support HTML5 video.
+            </video>
+        </div>
+
 
     <!-- ＝＝＝＝＝＝＝＝＝＝時間選択ボタン＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝ -->
     <div class="time_select_container">
@@ -25,40 +27,52 @@
         <button data-time="600">10<br>Minutes</button>
     </div>
 
-    <!--＝＝＝＝＝＝＝＝＝＝ 残り時間表示＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝ -->
-    <div class="player-container">
-        <audio class="song">
-            <!-- 多分音 -->
-            <source src="./sounds/rain.mp3">
-        </audio>
-        <!-- 再生・停止ボタン -->
-        <img src="./svg/play.svg" alt="再生ボタン" class="play">
-        <!--残り時間出るマル -->
-        <svg class="track-circle" width="450" height="450" viewBox="0 0 450 450">
-            <circle cx="200" cy="200" r="200"  fill="none" stroke="white" stroke-width="20"/>
-        </svg>
-        <svg>
-            
-        </svg>
-        <!-- リプレイボタン -->
 
-        <img src="./svg/replay.svg" class="replay">
+        <!--＝＝＝＝＝＝＝＝＝＝ 残り時間表示＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝ -->
+        <div class="player-container">
+            <audio class="song">
+                <!-- 多分音 -->
+                <source src="./sounds/rain.mp3">
+            </audio>
+            <!-- 再生・停止ボタン -->
+            <img src="./svg/play.svg" alt="再生ボタン" class="play">
+            <!--残り時間出るマル -->
+            <svg class="track-circle" width="450" height="450" viewBox="0 0 450 450">
+                <circle cx="200" cy="200" r="200"  fill="none" stroke="white" stroke-width="20"/>
+            </svg>
+            <svg>
+                
+            </svg>
+            <!-- リプレイボタン -->
 
-        <!-- 残り時間表示 -->
-        <h3 class="time-display">0:00</h3>
-    </div>
+            <img src="./svg/replay.svg" class="replay">
 
-    <!-- ＝＝＝＝＝＝＝＝＝＝天気選択 ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝-->
-    <div class="weather_select_container">
-        <!-- 曇り選択ボタン -->
-        <button data-sound="./sounds/rain.mp3" data-video="./video/rain.mp4" id="weather_select_btn_cloud" class="weather_select_btn">
-            <img class="weather_select_btn_img" src="svg/cloud.svg" alt="">
-        </button>
-        <!-- 晴れ選択ボタン -->
-        <button data-sound="./sounds/beach.mp3" data-video="./video/beach.mp4" id="weather_select_btn_sun" class="weather_select_btn">
-            <img class="weather_select_btn_img" src="svg/sun.svg" alt="">
-        </button>
-    </div>
-    <script src="index.js"></script>
+            <!-- 残り時間表示 -->
+            <h3 class="time-display">0:00</h3>
+        </div>
+
+        <!-- ＝＝＝＝＝＝＝＝＝＝天気選択 ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝-->
+        <div class="weather_select_container">
+            <!-- 曇り選択ボタン -->
+            <button data-sound="./sounds/rain.mp3" data-video="./video/rain.mp4" id="weather_select_btn_cloud" class="weather_select_btn">
+                <img class="weather_select_btn_img" src="svg/rain.svg" alt="">
+            </button>
+            <!-- 晴れ選択ボタン -->
+            <button data-sound="./sounds/beach.mp3" data-video="./video/beach.mp4" id="weather_select_btn_sun" class="weather_select_btn">
+                <img class="weather_select_btn_img" src="svg/beach.svg" alt="">
+            </button>
+        </div>
+        <script src="index.js"></script>
+        <script type="text/javascript">LineIt.loadButton();</script>
+    </main>
+    <footer class="footer_container">
+        <button><a href="https://social-plugins.line.me/lineit/share?url=https://asaka0408.github.io/moggithon2022-2-2B/">LINEで共有</a></button>
+
+        <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" data-url="https://asaka0408.github.io/moggithon2022-2-2B/" class="twitter-share-button" data-show-count="false">Tweet</a>
+    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    </footer>
 </body>
+
+
+
 </html>

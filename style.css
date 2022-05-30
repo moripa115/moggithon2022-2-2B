@@ -1,11 +1,13 @@
 /* 画面全体・共通内容 */
 body {
+  display: flex;
+  flex-direction: column;
   font-family: 'Courier New', Courier, monospace;
 }
 
 .main_container {
   display: flex;
-  height: 100vh;
+  height: 95vh;
 }
 
 /* 背景動画 */
@@ -18,8 +20,6 @@ body {
   bottom:0;
   overflow: hidden;
 }
-
-
 
 
 /* 時間選択ボタン*/
@@ -114,4 +114,24 @@ body {
 
 .weather_select_btn_img:hover {
   cursor: pointer;
+}
+
+/* 共有ボタン */
+.footer_container {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.footer_container button {
+  width: 150px;
+  height: 50px;
+  font-size: 20px;
+  background: transparent;
+  border-radius: 5px;
+  border-color: greenyellow;
+}
+
+.footer_container a {
+  text-decoration: none;
+  color: greenyellow;
 }
