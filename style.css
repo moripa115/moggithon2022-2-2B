@@ -1,0 +1,137 @@
+/* 画面全体・共通内容 */
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.main_container {
+  display: flex;
+  height: 95vh;
+}
+
+/* 背景動画 */
+.video_container {
+  position: fixed;
+  z-index: -2;/*最背面に設定*/
+  top: 0;
+  right:0;
+  left:0;
+  bottom:0;
+  overflow: hidden;
+}
+
+
+/* 時間選択ボタン*/
+.time_select_container {
+  width: 33%;
+  display: flex;
+  flex-flow: column;
+  justify-content:space-evenly;
+  align-items: center;
+}
+
+
+.time_select_container button {
+  width: 150px;
+  height: 50px;
+  font-size: 20px;
+  background: transparent;
+  border-radius: 5px;
+  color: white;
+  border-color: white;
+}
+
+.time_select_container button:hover {
+  background-color: white;
+  color: black;
+  cursor: pointer;
+}
+
+
+/* 残り時間表示 */
+.player-container {
+  position: relative;
+  height: 80%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  flex: 1;
+}
+
+
+.player-container svg{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-90deg);
+  pointer-events: none;
+}
+
+.player-container {
+  width: 33%;
+  align-content: center;
+}
+
+
+.player-container svg circle {
+  transition: all 0.2s ease-in-out;
+}
+
+.time-display {
+  color: white;
+  position: absolute;
+  font-size: 50px;
+  bottom: 10%;
+}
+
+/* 天気選択ボタン */
+.weather_select_container {
+  width: 33%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content:space-evenly;
+}
+
+.weather_select_btn {
+  border-radius: 50%;
+  border: none;
+  width: 120px;
+  height: 120px;
+}
+#weather_select_btn_cloud {
+  background-color: royalblue;
+}
+#weather_select_btn_sun {
+  background-color: maroon;
+}
+.weather_select_btn_img {
+  width: 80%;
+  height: 80%;
+}
+
+.weather_select_btn_img:hover {
+  cursor: pointer;
+}
+
+/* 共有ボタン */
+.footer_container {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.footer_container button {
+  width: 150px;
+  height: 50px;
+  font-size: 20px;
+  background: transparent;
+  border-radius: 5px;
+  border-color: greenyellow;
+}
+
+.footer_container a {
+  text-decoration: none;
+  color: greenyellow;
+}
